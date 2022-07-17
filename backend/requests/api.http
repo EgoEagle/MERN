@@ -1,0 +1,20 @@
+### Get Questions
+
+GET http://127.0.0.1:5001/api/questions
+Content-Type: application/json
+
+### Delete Questions
+DELETE http://127.0.0.1:5001/api/questions/3
+Content-Type: application/json
+
+### Submit Questions
+POST http://127.0.0.1:5001/api/questions
+Content-Type: application/json
+
+
+{
+     "name": "Mark",
+     "content": "More Questions"
+
+
+}
