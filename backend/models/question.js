@@ -15,7 +15,7 @@ const QuestionSchema = Schema({
      },
      isAnswered: {
           type:Boolean,
-          default: false         
+          default: true         
 
      },
 
@@ -25,6 +25,6 @@ const QuestionSchema = Schema({
      },
 
 
-},{timestamp: true})
+},{timestamps: true})
 
 export const Question = mongoose.model('Question' , QuestionSchema);

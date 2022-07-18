@@ -1,10 +1,14 @@
 ### Get Questions
-
 GET http://127.0.0.1:5001/api/questions
 Content-Type: application/json
 
 ### Delete Questions
-DELETE http://127.0.0.1:5001/api/questions/3
+DELETE http://127.0.0.1:5001/api/questions/62d4c99b29853ce3335caf3d
+Content-Type: application/json
+
+
+### Update Questions
+PATCH http://127.0.0.1:5001/api/questions/62d4ca38297523c1d766ec71
 Content-Type: application/json
 
 ### Submit Questions
@@ -14,7 +18,11 @@ Content-Type: application/json
 
 {
      "name": "Mark",
-     "content": "More Questions"
+     "content": "I have a question",
+     "link": "link to the past",
+     "isAnswered" : false
 
 
 }
+
+
