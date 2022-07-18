@@ -35,17 +35,20 @@ router.delete('/:question_id', (req,res) =>{
 
 router.patch('/:question_id', (req,res) => {
      const _id = req.params.question_id;
+     console.log(_id);
      const isAnswered = req.body.isAnswered;
+     console.log(isAnswered);
      Question.findOneAndUpdate(_id, {isAnswered: isAnswered},{
           new: true
 
      })
 
-          .then(question => res.json(question))
+          .then(question => res.json({_id: question._id}))
                .catch(err => res.status(404).json(err));
+     
 
 });
 
-console.log(router.stack);
+//console.log(router.stack);
 
 export const questions = router;
